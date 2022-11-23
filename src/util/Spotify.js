@@ -1,5 +1,5 @@
 const clientID = '3c63db50f04342d4b0f083f7d3689be5';
-const redirectURL = 'http://localhost:3000/';
+const redirectURI = 'https://benjamming.netlify.app/';
 
 let userToken = null;
 let expires = null;
@@ -39,7 +39,7 @@ let Spotify = {
                 window.history.pushState('Access Token', null, '/');
                 console.log('Awaiting data clearance');
             } else {
-                let newURL = 'https://accounts.spotify.com/authorize?client_id=' + clientID + '&response_type=token&scope=playlist-modify-public&redirect_uri=' + redirectURL;
+                let newURL = 'https://accounts.spotify.com/authorize?client_id=' + clientID + '&response_type=token&scope=playlist-modify-public&redirect_uri=' + redirectURI;
                 window.location.href = newURL;
             }
 
