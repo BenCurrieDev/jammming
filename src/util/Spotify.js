@@ -1,5 +1,5 @@
 const clientID = '3c63db50f04342d4b0f083f7d3689be5';
-const redirectURI = 'https://benjamming.netlify.app/';
+const redirectURI = 'https://benjammming.netlify.app/';
 
 let userToken = null;
 let expires = null;
